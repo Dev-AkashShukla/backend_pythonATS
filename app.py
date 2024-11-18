@@ -15,6 +15,9 @@ app = Flask(__name__)
 # Enable CORS for all routes
 CORS(app)
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"message": "Welcome to the backend service!"})
 # Function to get a response from Gemini AI
 def get_gemini_response(input_text, pdf_text, prompt):
     model = genai.GenerativeModel('gemini-1.5-flash-001')
