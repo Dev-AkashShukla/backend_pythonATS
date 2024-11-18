@@ -1,5 +1,6 @@
-streamlit
-google-generativeai
-python-dotenv
-pdf2image
+Flask
+gunicorn
 PyPDF2
+python-dotenv
+flask-cors
+google-generativeai
